@@ -1,4 +1,4 @@
-package metodo_abstrato;
+package class_abstrato;
 
 public class ContaSalva extends Conta {
 

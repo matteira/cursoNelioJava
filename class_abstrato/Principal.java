@@ -1,4 +1,4 @@
-package metodo_abstrato;
+package class_abstrato;
 
 import java.util.ArrayList;
 import java.util.List;
