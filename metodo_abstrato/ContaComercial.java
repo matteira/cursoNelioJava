@@ -1,4 +1,4 @@
-package heranca_e_polimorfismo;
+package metodo_abstrato;
 
 public class ContaComercial extends Conta {
     private Double emprestimoLimite;

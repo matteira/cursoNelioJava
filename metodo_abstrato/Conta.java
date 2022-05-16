@@ -1,6 +1,6 @@
-package heranca_e_polimorfismo;
+package metodo_abstrato;
 
-public class Conta {
+public abstract class Conta {
     private Integer numero;
     private String titular;
     protected Double saldo;

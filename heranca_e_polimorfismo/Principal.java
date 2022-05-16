@@ -1,4 +1,4 @@
-package herança_e_polimorfismo;
+package heranca_e_polimorfismo;
 
 public class Principal {
     public static void main(String[] args) {
