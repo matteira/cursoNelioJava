@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class VeryBad {
+public class Bad {
     public static void main(String[] args) throws ParseException {
         Scanner leitor = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -31,15 +31,13 @@ public class VeryBad {
             System.out.println("Check-out  date (dd/MM/yyyy): ");
             checkOut = sdf.parse(leitor.next());
 
-            Date now = new Date();
-            if (checkIn.before(now) || checkOut.before(now)) {
-                System.out.println("Error in reservation: Reservation dates for update must be future");
-            } else if (!checkOut.after(checkIn)) {
-                System.out.println("Error in reservation: Check-out date must be after check-in date");
+            String error = reservation.updatesDates(checkIn, checkOut);
+            if (error != null) {
+                System.out.println("Error in reservation: " + error);
             } else {
-                reservation.updatesDates(checkIn, checkOut);
                 System.out.println("Reservation: " + reservation);
             }
+
         }
         leitor.close();
     }
