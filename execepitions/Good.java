@@ -38,7 +38,7 @@ public class Good {
         } catch (RuntimeException e) {
             System.out.println("Unexpected error");
         }
-        
+
         leitor.close();
     }
 }
